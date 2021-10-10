@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea407fdd-37f4-47f5-be79-9219bd95acef">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM pokemon;]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="species" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="color" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="habitat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="capture_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="base_experience" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="125" y="0" width="296" height="37" uuid="04bb2dc6-7def-433a-9887-9480b015a985"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Reportes de Pokemones ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="18" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="-15" y="0" width="42" height="20" uuid="0d253a27-070b-4e3d-8a0d-02a363c076c3"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="0" width="100" height="20" uuid="29d4f48f-924a-4126-994b-7f2499148fcb"/>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="0" width="100" height="20" uuid="23a84d67-c966-46c3-8e87-634549669cd1"/>
+				<text><![CDATA[species]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="0" width="100" height="20" uuid="a420e9c7-2372-42d9-b0b5-d9d861371b67"/>
+				<text><![CDATA[color]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="0" width="100" height="20" uuid="f68fbe38-8536-4a53-86de-95b39d75699e"/>
+				<text><![CDATA[habitat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="0" width="81" height="20" uuid="77ffb6f4-6ee4-4134-86f2-ae0fd4e21be0"/>
+				<text><![CDATA[capture_rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="508" y="0" width="60" height="20" uuid="fb1890fd-d128-472b-b72f-ba0af1ab8cb6"/>
+				<text><![CDATA[base_experience]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="-15" y="0" width="42" height="20" uuid="cef218d9-f356-4d5b-961c-89852805d498"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="0" width="100" height="20" uuid="abb81637-875a-4b3d-b833-987abcac48a5"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="0" width="100" height="20" uuid="fd986808-a3d6-4e70-b6e1-20dd1afd8b10"/>
+				<textFieldExpression><![CDATA[$F{species}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="0" width="100" height="20" uuid="897c906c-7f31-4786-bdb3-3b0215f9a4e0"/>
+				<textFieldExpression><![CDATA[$F{color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="0" width="100" height="20" uuid="31eb3bdc-313c-4258-9ccc-0405efa4cf1e"/>
+				<textFieldExpression><![CDATA[$F{habitat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="81" height="20" uuid="38d7b6ea-2b39-4130-8422-04ca82b8e6c8"/>
+				<textFieldExpression><![CDATA[$F{capture_rate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="0" width="60" height="20" uuid="9aca1bfb-f5f2-4790-9b0d-42427aa0ba44"/>
+				<textFieldExpression><![CDATA[$F{base_experience}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="189" y="3" width="80" height="20" uuid="d2977967-b353-4378-86ad-aaa728802dde"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="269" y="3" width="40" height="20" uuid="cc352af6-b239-4800-8858-9e6650950aeb"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="21" splitType="Stretch"/>
+	</summary>
+</jasperReport>
